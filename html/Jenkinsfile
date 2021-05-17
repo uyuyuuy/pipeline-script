@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello World'
+            }
+            steps {
+                echo 'Hello World11'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                kubectl 
+            }
+            steps {
+                echo 'Hello World11'
+            }
+        }
+    }
+}
